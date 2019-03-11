@@ -1,0 +1,9 @@
+# Default
+* text=auto
+
+# CSS
+*.css text encoding=utf-8 eol=lf
+
+# JavaScript/JSON
+*.js text encoding=utf-8 eol=lf
+*.json text encoding=utf-8 eol=lf

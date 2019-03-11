@@ -1,0 +1,83 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Build",
+      "type": "shell",
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      },
+      "command": "web-ext",
+      "args": [
+        "build",
+        "--config=${workspaceRoot}/web-ext-config.js",
+        "--source-dir=${workspaceRoot}/src"
+      ],
+      "windows": {
+        "command": "web-ext",
+        "args": [
+          "build",
+          "--config=${workspaceRoot}\\web-ext-config.js",
+          "--source-dir=${workspaceRoot}\\src"
+        ]
+      },
+      "presentation": {
+        "echo": true,
+        "reveal": "always",
+        "focus": true,
+        "panel": "shared",
+        "showReuseMessage": false,
+        "clear": true
+      },
+      "problemMatcher": []
+    },
+    {
+      "label": "Run",
+      "type": "shell",
+      "group": {
+        "kind": "test",
+        "isDefault": true
+      },
+      "command": "web-ext",
+      "args": [
+        "run",
+        "--config=${workspaceRoot}/web-ext-config.js",
+        "--source-dir=${workspaceRoot}/src",
+        "--target=firefox-desktop",
+        "--start-url=www.google.com",
+      ],
+      "osx": {
+        "command": "web-ext",
+        "args": [
+          "run",
+          "--config=${workspaceRoot}/web-ext-config.js",
+          "--firefox=/Applications/Firefox.app/Contents/MacOS/firefox-bin",
+          "--source-dir=${workspaceRoot}/src",
+          "--target=firefox-desktop",
+          "--start-url=www.google.com"
+        ]
+      },
+      "windows": {
+        "command": "web-ext",
+        "args": [
+          "run",
+          "--config=${workspaceRoot}\\web-ext-config.js",
+          "--firefox=\"C:\\Program Files\\Mozilla Firefox\\firefox.exe\"",
+          "--source-dir=${workspaceRoot}\\src",
+          "--target=firefox-desktop",
+          "--start-url=www.google.com"
+        ]
+      },
+      "presentation": {
+        "echo": true,
+        "reveal": "always",
+        "focus": true,
+        "panel": "shared",
+        "showReuseMessage": false,
+        "clear": true
+      },
+      "problemMatcher": []
+    }
+  ]
+}

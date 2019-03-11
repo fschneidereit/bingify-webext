@@ -1,0 +1,11 @@
+# Artifacts
+web-ext-artifacts/
+
+# Windows
+$RECYCLE.BIN/
+Desktop.ini
+ehthumbs.db
+Thumbs.db
+
+# Mac
+.DS_Store

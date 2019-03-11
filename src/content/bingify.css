@@ -1,0 +1,66 @@
+/***************************************************************************************************
+ *
+ *  Bingify: Makes Google look a little bit like Bing
+ *  Copyright © 2019 Florian Schneidereit
+ *
+ *  Permission is hereby granted, free of charge, to any person obtaining a copy of this software
+ *  and associated documentation files (the "Software"), to deal in the Software without
+ *  restriction, including without limitation the rights to use, copy, modify, merge, publish,
+ *  distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the
+ *  Software is furnished to do so, subject to the following conditions:
+ *
+ *  The above copyright notice and this permission notice shall be included in all copies or
+ *  substantial portions of the Software.
+ *
+ *  THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING
+ *  BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND
+ *  NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM,
+ *  DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+ *  OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+ *
+ **************************************************************************************************/
+
+@charset "UTF-8";
+
+.bingified_button_obj {
+    background-repeat: no-repeat;
+    background-size: contain;
+    float: right;
+    height: 32px;
+    line-height: 40px;
+    margin: 3px 0px 0px 8px;
+    opacity: 0.54;
+    width: 32px;
+}
+
+.bingified_hplogo {
+    filter: drop-shadow(0px 0px 4px #202020);
+}
+
+.bingified_hptla {
+    color: #f2f2f2 !important;
+}
+
+.bingified_prm {
+    color: #f2f2f2 !important;
+}
+
+.bingified_viewport {
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#bingified_panorama {
+    background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGAAAABgCAQAAABIkb+zAAAB50lEQVR4Ae2agUZEYRCFJyGy0gtUcIU21c48QdBzLAEBKAAC0gOEKiwBUACC6hFaCJDeoIoUam+h1eXs3YFGd3K+AfjhY87Bb4QQQgghhBBChizP6Y5e26OVDZtHvdad5TkZR7tl5zqwsrmjAztvt2Q0xZT2rWz+aL+YklHokZU5Ro8E0UI/0gh8aAECtmdlotkDAb3JJKB9ELDXTAL2ggJlrkkoQAEKUIACFKAABShAAQpQgAIUoMCJ9VIJ4MegTettUgF96CzIF50le0kooAPbkG+0m1FgVypYL5vAhUxIBUzCXwmc6IH/Su/XZqUKJiFKwG8VmbRL59WbrgiCSYgR8FulmLG7ce86m4JgEuIE/FZZXbSn2nengmASggX8Vlm399olQzAJoQJ+q3xhWzVL5qDdGAG/VQA7rl8yBJMQLOC3SrWPcMn8JIQK+K0CfQRL5ichVsBvlUof4ZL5SQgX8Ftl2Ee4ZD7WixHwWwWwrdolc5IQIACtEgUmIUBgV4LRboAAtEoo1osQGLZKCJiEAAFslfgk/KqA0yrBSeDHlj8UoMBzKoHn/3dypvupBPZBoLOQ6ezS5gXRw3SHr3B6fJPr9Bhot/Ss6cffetZuyThs3rabeX5vV7b9s/uEEEIIIYQQ8gmvjfSppR8+uwAAAABJRU5ErkJggg==");
+}
+
+#bingified_image_title {
+    font-size: 15px;
+    position: absolute;
+    right: 30px;
+}
+
+#bingified_image_title a {
+    margin: 0px;
+}

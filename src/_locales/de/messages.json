@@ -1,0 +1,14 @@
+{
+  "extensionName": {
+    "message": "Bingify",
+    "description": "The extension name."
+  },
+  "extensionShortName": {
+    "message": "Bingify",
+    "description": "The extension short name."
+  },
+  "extensionDescription": {
+    "message": "Lässt Google ein bisschen wie Bing aussehen.",
+    "description": "The extension description."
+  }
+}

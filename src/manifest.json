@@ -1,0 +1,37 @@
+{
+  "manifest_version": 2,
+  "name": "__MSG_extensionName__",
+  "description": "__MSG_extensionDescription__",
+  "author": "Florian Schneidereit",
+  "version": "1.0.0",
+  "short_name": "__MSG_extensionShortName__",
+  "version_name": "1.0",
+  "developer": {
+    "name": "Florian Schneidereit",
+    "url": "http://github.com/fschneidereit/bingify-webext"
+  },
+  "default_locale": "en",
+  "permissions": [
+    "*://*.bing.com/*",
+    "storage",
+    "webRequest"
+  ],
+  "content_scripts": [
+    {
+      "matches": [
+        "*://www.google.com/",
+        "*://www.google.com/?*",
+        "*://www.google.com/webhp?*"
+      ],
+      "css": [
+        "content/bingify.css"],
+      "js": [
+        "content/bingify.js"]
+    }
+  ],
+  "application": {
+    "gecko": {
+      "id": "florian.schneidereit@outlook.com"
+    }
+  }
+}
